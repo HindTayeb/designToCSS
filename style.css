@@ -64,17 +64,90 @@
 /* (2) - Balance */
 #balance {
     grid-area: 1 / 1 / span 9 / span 13;
+    background: linear-gradient(90deg, var(--primary), var(--darkGradient)); 
+    padding: var(--spaceXL);
+    border-radius: var(--roundLG);
 }
 
-/* (3) - Payment */
-#payment {
-    grid-area: 1 / 14 / span 5 / span 24;
+#balance h1, #balance h2{
+    color: var(--negative);
 }
 
-#activities {
-
+#balance header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--spaceLG);
 }
 
+.date h1 {
+    font-size: var(--lg);
+    font-weight: var(--light);
+}
+
+.date h2 {
+    font-size: var(--md);
+    font-weight: var(--thin);
+}
+
+.percentage h1 {
+    font-size: var(--lg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.percentage h1 svg {
+    margin-left: var(--spaceXS);
+    transform: scale(1.2);
+    transform-origin: center center;
+}
+
+.percentage h1 svg path{
+    fill: var(--negative);
+}
+
+#balance footer h1 {
+    font-weight: var(--black);
+}
+
+#balance footer h1 span:first-child {
+    font-size: var(--lg);
+}
+
+#balance footer h1 span:last-child {
+    font-size: var(--xl);
+}
+
+/* (3) - Summary */
 #summary {
+    grid-area: 11 / 1 / span 16 / span 13;
+    background: linear-gradient(180deg, var(--negative), var(--lightGradient)); 
+    padding: var(--spaceXL);
+    border-radius: var(--roundLG);
+    color: var(--text);
+    box-shadow: var(--shadow);
+}
 
+#summary header {
+    font-size: var(--lg);
+    font-weight: var(--thin);
+}
+
+#summary main .account-number, #summary main .transactions-limit {
+    background: var(--negative); 
+    padding: var(--spaceLG);
+    border-radius: var(--roundLG);
+    box-shadow: var(--shadow);
+    font-size: var(--md);
+}
+
+/* (4) - Payment */
+#payment {
+    grid-area: 1 / 15 / span 5 / span 10;
+}
+
+/* (5) - Activites */
+#activities {
+    grid-area: 7 / 15 / span 18 / span 10;
 }
