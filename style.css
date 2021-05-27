@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+/*    Color Palette  */
+    --primary: #2306fd;
+    --secondary: #1501a7;
+    --text: #5a5580;
+    --negative: #ffffff;
+    --lightGradient: #f5f4ff;
+    --darkGradient: #44009c;
+
+/*    Typesize */
+    --xl: 77px;
+    --lg: 48;
+    --md: 29;
+    --sm: 17;
+
+/*    Type Weight */
+    --black: 900;
+    --bold: 700;
+    --medium: 500;
+    --regular: 400;
+    --light: 300;
+    --thin: 100;
+
+/*    Margin & Padding */
+    --spaceXL: 96px;
+    --spaceLG: 72px;
+    --spaceMD: 48px;
+    --spaceSM: 24px;
+    --spaceXS: 12px;
+
+/*    Border Radius */
+    --roundLG: 80px;
+    --roundMD: 60px;
+    --roundSM: 40px;
+
+/*    Box Shadow */
+    --shadow: 0 0 20px 5px rgba(0,0,0,0.06);
+
+}
+
+/* (1) - Wrapper */
+.wrapper {
+    width: 1152px;
+    height: 1248px;
+    display: grid;
+    grid: repeat(26, 1fr) / repeat(24, 1fr);
+    margin: var(--spaceMD) auto; /* top & bottom = MD, left and right = auto */
+}
+
+/* (2) - Balance */
+#balance {
+    grid-area: 1 / 1 / span 9 / span 13;
+}
+
+/* (3) - Payment */
+#payment {
+    grid-area: 1 / 14 / span 5 / span 24;
+}
+
+#activities {
+
+}
+
+#summary {
+
+}
