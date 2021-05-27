@@ -23,9 +23,9 @@
 
 /*    Typesize */
     --xl: 77px;
-    --lg: 48;
-    --md: 29;
-    --sm: 17;
+    --lg: 48px;
+    --md: 29px;
+    --sm: 17px;
 
 /*    Type Weight */
     --black: 900;
@@ -129,12 +129,17 @@
     box-shadow: var(--shadow);
 }
 
-#summary header {
-    font-size: var(--lg);
-    font-weight: var(--thin);
+#summary h1 {
+    color: var(--text);
+    font-weight: var(--light);
 }
 
-#summary main .account-number, #summary main .transactions-limit {
+ #summary header h1{
+    font-size: var(--lg);
+}
+
+
+.account-number, .transactions-limit {
     background: var(--negative); 
     padding: var(--spaceLG);
     border-radius: var(--roundLG);
